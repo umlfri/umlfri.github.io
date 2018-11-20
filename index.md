@@ -1,5 +1,5 @@
 ---
 layout: page
-title: Where dit I came to?
+title: Where did I came to?
 ---
 Test umlfri web site
