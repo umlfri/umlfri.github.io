@@ -1,0 +1,15 @@
+pages:
+  - title: Home
+    url: /
+
+  - title: About
+    url: about.html
+
+  - title: Downloads
+    url: downloads.html
+
+  - title: Screenshots
+    url: screenshots.html
+
+  - title: GitHub page
+    url: https://github.com/umlfri/umlfri2/

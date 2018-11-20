@@ -4,11 +4,9 @@
       <h1>{{ site.title }}</h1>
       <nav id="nav">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Downloads</a></li>
-          <li><a href="#">Screenshots</a></li>
-          <li><a href="#">Bug reports</a></li>
+          {% for item in site.data.menu.pages %}
+            <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
+          {% endfor %}
         </ul>
       </nav>
     </div>
