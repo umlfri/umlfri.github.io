@@ -1,2 +1,6 @@
 - title: UML .FRI 2 running on my Gentoo laptop
   file: diagram_on_gentoo.png
+- title: UML .FRI 2 running on MS Windows 10
+  file: diagram_on_windows.png
+- title: UML .FRI 2 running on MacOs X (from command line for now)
+  file: diagram_on_mac_os_x.png
