@@ -1,0 +1,41 @@
+---
+layout: page
+permalink: /downloads.html
+title: Downloads
+---
+<p>
+  You can find whole source code and all releases on the project
+  <a href="https://github.com/umlfri/umlfri2/">GitHub page</a>. If you want to download
+  a binary version, you can find it in the list below. Please use the latest version if possible
+  to avoid already fixed bugs in the application.
+</p>
+
+{% for release in site.data.releases reversed %}
+<div class="release{% if forloop.first %} latest-release{% endif %}">
+  <h3>
+    <span class="release-icon"></span>
+    <a href="https://github.com/umlfri/umlfri2/releases/tag/v{{release.version}}" target="_blank">{{release.version}}</a>
+    {% if forloop.first %}
+      <span class="badge">Latest release</span>
+    {% endif %}
+  </h3>
+  <hr class="release-hr">
+  <h4><span class="info-icon"></span>Release Info</h4>
+  <ul>
+    <li><span class="date-icon"></span>Published: {{release.published}}</li>
+    <li><span class="author-icon"></span>Published by: <a href="https://github.com/janusko/">Ján Janech</a></li>
+    {% if release.changelog != false %}
+      <li><span class="changelog-icon"></span><a href="https://github.com/umlfri/umlfri2/releases/tag/v{{release.version}}" target="_blank">Changelog</a></li>
+    {% endif %}
+  </ul>
+  <h4><span class="download-icon"></span>Files</h4>
+  <ul>
+    {% for file in release.files %}
+      <li>
+        <a href="https://github.com/umlfri/umlfri2/releases/download/v{{release.version}}/{{file.file}}">{{file.file}}</a>
+      </li>
+    {% endfor %}
+    <li><a href="https://github.com/umlfri/umlfri2/archive/{{release.version}}.zip">Source code</a></li>
+  </ul>
+</div>
+{% endfor %}
