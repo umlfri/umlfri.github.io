@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <title>{{ site.title }}{% if page.title && !page.donttitle %} - {{ page.title }}{% endif %}</title>
+  <title>{{ site.title }}{% if page.title != "" %} - {{ page.title }}{% endif %}</title>
   <meta name="description" content="{{ site.description }}">
   <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}">
 

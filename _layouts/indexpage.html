@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{{ content }}
+
+{% assign psize = site.posts | size %}
+{% if psize > 0 %}
+<h2>What's new</h2>
+
+{% for post in site.posts %}
+<div class="news_post">
+  <h3>{{ post.title }}</h3>
+  <p class="date">{{ post.date | date_to_string }}</p>
+  <p>{{ post.excerpt }}</p>
+  <p class="more"><a href="{{post.url}}">more</a></p>
+</div>
+{% endfor %}
+{% endif %}

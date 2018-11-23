@@ -5,3 +5,4 @@ author: Jan Janech
 # remote_theme: "awochna/jekyll-skeleton"
 exclude:
   - assets/images/screenshots/convert.sh
+excerpt_separator: <!--more-->
