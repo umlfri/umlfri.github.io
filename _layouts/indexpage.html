@@ -6,7 +6,9 @@ layout: default
 
 {% assign psize = site.posts | size %}
 {% if psize > 0 %}
+<div class="news_list">
 <h2>What's new</h2>
+<a href="{{ '/feed.xml' | prepend: site.baseurl }}" class="feed_link" rel="alternate" type="application/rss+xml">RSS</a>
 
 {% for post in site.posts %}
 <div class="news_post">
@@ -17,3 +19,4 @@ layout: default
 </div>
 {% endfor %}
 {% endif %}
+</div>

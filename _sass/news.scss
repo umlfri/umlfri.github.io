@@ -20,3 +20,14 @@
     }
   }
 }
+
+.news_list {
+  h2 {
+    display: inline-block;
+  }
+
+  a.feed_link {
+    display: inline-block;
+    margin-left: 20px;
+  }
+}
