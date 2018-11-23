@@ -1,0 +1,33 @@
+@media (min-width: 1000px) {
+  div.site-logo {
+    position: absolute;
+
+    i {
+      position: absolute;
+      right: 0;
+      margin-right: 10px;
+      margin-top: 5px;
+    }
+  }
+}
+
+@media (max-width:1000px) and (min-width:650px) {
+  div.site-logo {
+    i {
+      float: left;
+      margin-right: 10px;
+    }
+  }
+}
+
+div.site-logo {
+  i {
+    display: block;
+    width: 90px;
+    height: 90px;
+
+    background-image: url("/assets/images/logo_full.svg");
+    background-repeat: no-repeat;
+    background-size: 90px 90px;
+  }
+}
