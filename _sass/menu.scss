@@ -71,3 +71,29 @@
     }
   }
 }
+
+@media (max-width: 650px) {
+  #nav {
+    ul {
+      a {
+        span.menu-icon {
+          display: none !important;
+        }
+
+        span.menu-title {
+          display: inline !important;
+        }
+      }
+    }
+  }
+}
+
+a.menu-icon-github {
+  span.menu-icon {
+    @extend %umlfri-icon-github;
+  }
+
+  span.menu-title {
+    display: none;
+  }
+}

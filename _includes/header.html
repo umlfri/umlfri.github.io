@@ -6,7 +6,11 @@
       <nav id="nav">
         <ul>
           {% for item in site.data.menu.pages %}
-            <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
+            {% if item.icon %}
+          <li><a href="{{ item.url }}" title="{{ item.title }}" class="menu-icon-{{ item.icon }}"><span class="menu-icon"></span><span class="menu-title">{{ item.title }}</span></a></li>
+            {% else %}
+              <li><a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a></li>
+            {% endif %}
           {% endfor %}
         </ul>
       </nav>
