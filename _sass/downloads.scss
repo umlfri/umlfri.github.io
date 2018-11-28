@@ -1,14 +1,4 @@
-@font-face {
-  font-family: 'Glyphicons Halflings';
-  font-style: normal;
-  font-weight: normal;
-  src: url(/assets/fonts/glyphicons/glyphicons-halflings-regular.eot);
-  src: url(/assets/fonts/glyphicons/glyphicons-halflings-regular.eot) format('embedded-opentype'),
-  url(/assets/fonts/glyphicons/glyphicons-halflings-regular.woff) format('woff'),
-  url(/assets/fonts/glyphicons/glyphicons-halflings-regular.ttf) format('truetype'),
-  url(/assets/fonts/glyphicons/glyphicons-halflings-regular.svg) format('svg');
-
-}
+@import "icon-font";
 
 .release {
   background-color: rgba(127, 140, 141, 0.1);
@@ -52,32 +42,38 @@
     }
   }
 
-  .release-icon, .info-icon, .date-icon, .author-icon, .download-icon, .changelog-icon {
-    font-family: 'Glyphicons Halflings';
+  %space-after {
+    padding-right: 0.5em;
   }
 
-  .release-icon::after {
-    content: "\e041  ";
+  .release-icon {
+    @extend %umlfri-icon-tag;
+    @extend %space-after;
   }
 
-  .info-icon::after {
-    content: "\e086  ";
+  .info-icon {
+    @extend %umlfri-icon-info;
+    @extend %space-after;
   }
 
-  .author-icon::after {
-    content: "\e008  ";
+  .author-icon {
+    @extend %umlfri-icon-user;
+    @extend %space-after;
   }
 
-  .date-icon::after {
-    content: "\e109  ";
+  .date-icon {
+    @extend %umlfri-icon-calendar;
+    @extend %space-after;
   }
 
-  .download-icon::after {
-    content: "\e026  ";
+  .download-icon {
+    @extend %umlfri-icon-download;
+    @extend %space-after;
   }
 
-  .changelog-icon::after {
-    content: "\e012  ";
+  .changelog-icon {
+    @extend %umlfri-icon-list;
+    @extend %space-after;
   }
 }
 
@@ -110,4 +106,3 @@
     border-color: rgba(92, 184, 92, 0.4);
   }
 }
-
