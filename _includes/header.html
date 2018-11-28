@@ -6,10 +6,21 @@
       <nav id="nav">
         <ul>
           {% for item in site.data.menu.pages %}
-            {% if item.icon %}
-          <li><a href="{{ item.url }}" title="{{ item.title }}" class="menu-icon-{{ item.icon }}"><span class="menu-icon"></span><span class="menu-title">{{ item.title }}</span></a></li>
+            {% if item.external %}
+              {% assign target = ' target="_blank"' %}
             {% else %}
-              <li><a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a></li>
+          {% assign target = '' %}
+            {% endif %}
+            {% if item.icon %}
+              <li>
+                <a href="{{ item.url }}" title="{{ item.title }}" class="menu-icon-{{ item.icon }}"{{ target }}>
+                  <span class="menu-icon"></span><span class="menu-title">{{ item.title }}</span>
+                </a>
+              </li>
+            {% else %}
+              <li>
+                <a href="{{ item.url }}" title="{{ item.title }}"{{ target }}>{{ item.title }}</a>
+              </li>
             {% endif %}
           {% endfor %}
         </ul>

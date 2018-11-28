@@ -12,8 +12,10 @@ pages:
     url: /screenshots.html
 
   - title: Issues
+    external: true
     url: https://github.com/umlfri/umlfri2/issues/
 
   - title: GitHub page
     icon: github
+    external: true
     url: https://github.com/umlfri/umlfri2/
