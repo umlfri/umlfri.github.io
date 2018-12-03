@@ -8,3 +8,9 @@ excerpt_separator: <!--more-->
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+defaults:
+  -
+    scope:
+      path:            "assets/**"
+    values:
+      sitemap:         false
