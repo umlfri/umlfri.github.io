@@ -11,7 +11,7 @@ title: Downloads
 </p>
 
 {% for release in site.data.releases reversed %}
-<div class="release{% if forloop.first %} latest-release{% endif %}">
+<div class="release{% if forloop.first %} latest-release{% endif %}" id="v{{release.version}}">
   <h3>
     <span class="release-icon"></span>
     <a href="https://github.com/umlfri/umlfri2/releases/tag/v{{release.version}}" target="_blank">{{release.version}}</a>
