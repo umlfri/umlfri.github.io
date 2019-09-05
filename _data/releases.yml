@@ -14,3 +14,8 @@
   files:
     - platform: win32
       file: umlfri-setup-2.1.1.exe
+- version: 2.2.0
+  published: 2019-09-05
+  files:
+    - platform: win32
+      file: umlfri-setup-2.2.0.exe
