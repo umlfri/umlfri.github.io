@@ -19,3 +19,8 @@
   files:
     - platform: win32
       file: umlfri-setup-2.2.0.exe
+- version: 2.2.1
+  published: 2020-09-16
+  files:
+    - platform: win32
+      file: umlfri-setup-2.2.1.exe
